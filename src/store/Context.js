@@ -1,5 +1,5 @@
 import {createContext, useState} from 'react'
-import { flushSync } from 'react-dom';
+//import { flushSync } from 'react-dom';
 
 
 export const FirebaseContext = createContext(null)

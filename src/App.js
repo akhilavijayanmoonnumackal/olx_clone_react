@@ -5,6 +5,7 @@ import Login from './Pages/Login'
 import './App.css';
 import {AuthContext, FirebaseContext} from './store/Context'
 
+
 /**
  * ?  =====Import Components=====
  */
@@ -14,7 +15,7 @@ function App() {
   const {setUser} = useContext(AuthContext)
   const {firebase} = useContext(FirebaseContext)
   useEffect(()=>{
-    firebase.auth().onAuthStateChange((user)=>{
+    firebase.auth().onAuthStateChanged((user)=>{
       setUser(user)
     })
   })
